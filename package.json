@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/typodgrafiki/portfolio-html#readme",
   "devDependencies": {
+    "browser-sync": "^2.28.3",
     "gulp": "^4.0.2"
   }
 }
