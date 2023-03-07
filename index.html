@@ -8,7 +8,7 @@
         <link rel="stylesheet" type="text/css" href="assets/styles/style.css" /> 
         <title>HTML/CSS Portfolio &#8226; Grzegorz Kocik</title>
         <meta name="author" content="Grzegorz Kocik" />
-        <meta name="description" content="HTML/CSS Portfolio Projekt [...]" />  
+        <meta name="description" content="HTML/CSS Portfolio Projekt [...]" />
         <meta name="keywords"  content="html, css, portfolio, [...]" />
         <link href="icons/favicon-light.png" rel="icon" media="(prefers-color-scheme: light)" />
         <link href="icons/favicon-dark.png" rel="icon" media="(prefers-color-scheme: dark)" />
@@ -17,70 +17,209 @@
     </head>
     <body>
         <div class="container">
-            <header id="top">
-                <div id="logo">LOGO</div>
+            <header id="top" class="flex">
+                <div id="logo">
+                    <img src="assets/images/logo.svg" alt="Logo Saman Faegh" width="168" height="49" />
+                </div>
                 <nav>
-                    <ul>
-                        <li>
+                    <ul class="nav flex">
+                        <li class="active">
                             <a href="#top" class="btn">Home</a>
                         </li>
                         <li>
                             <a href="/blog.html" class="btn">Blog</a>
                         </li>
                         <li>
-                            <a href="/about-me.html" class="btn">About me</a>
+                            <a href="/about-me.html" class="btn">About Me</a>
                         </li>
                         <li>
-                            <a href="/contact.html" class="btn-dark">Contact</a>
+                            <a href="/contact.html" class="btn btn-dark">Contact Me</a>
                         </li>
                     </ul>
                 </nav>
             </header>
             <main>
-                <section>
-                    <div class="grid">
-                        <h1 class="font-asap">Blog</h1>
+                <section id="blog" class="grid">
+                    <h1 class="font-asap text-center relative">
+                        <span class="inline-block relative">
+                            Blog.
+                        </span>
+                    </h1>
+                    <div class="popular-articles grid dark-bg">
                         <div class="list-slide">
                             <h3 class="font-asap">Popular articles</h3>           
-                            <div class="item">
-                                <div class="image">IMG</div>
+                            <div class="item flex">
+                                <div class="image">  
+                                    <picture>
+                                        <source 
+                                            srcset="assets/images/popular-article/image1_2x.webp 2x, assets/images/popular-article/image1.webp 1x" 
+                                            type="image/webp">
+                                        <source 
+                                            srcset="assets/images/popular-article/image1_2x.jpg 2x, assets/images/popular-article/image1.jpg 1x" 
+                                            type="image/jpg">
+                                        <img 
+                                            class="img-responsive"
+                                            src="assets/images/popular-article/image1.jpg" 
+                                            srcset="assets/images/popular-article/image1_2x.jpg 2x, assets/images/popular-article/image1.jpg 1x" 
+                                            width="218"
+                                            height="149"
+                                            alt="Advancements in artificial">
+                                    </picture>
+                                </div>
                                 <div class="caption">
-                                    <div class="name">Advancements in artificial intelligence are revolutionizing industries across the globe, from healthcare to finance and beyond.</div>
-                                    <div class="date-row">
-                                        <div class="length">4 min</div>
-                                        <div class="views">2832</div>
-                                        <div class="more btn btn-default">more</div>
+                                    <div class="name">Advancements in artificial intelligence are revolutionizing industries across the globe.</div>
+                                    <div class="flex line-info">
+                                        <div class="date-row flex">
+                                            <div class="length">4 min</div>
+                                            <div class="views">2832</div>    
+                                        </div>
+                                        <a href="/blog" class="more btn btn-small"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 7.71729H14.435M14.435 7.71729L7.71751 0.999771M14.435 7.71729L7.71751 14.4348" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                                    </div>    
+                                </div>
+                            </div> 
+                            <div class="item flex">
+                                <div class="image">  
+                                    <picture>
+                                        <source 
+                                            srcset="assets/images/popular-article/image2_2x.webp 2x, assets/images/popular-article/image2.webp 1x" 
+                                            type="image/webp">
+                                        <source 
+                                            srcset="assets/images/popular-article/image2_2x.jpg 2x, assets/images/popular-article/image2.jpg 1x" 
+                                            type="image/jpg">
+                                        <img 
+                                            class="img-responsive"
+                                            src="assets/images/popular-article/image2.jpg" 
+                                            srcset="assets/images/popular-article/image2_2x.jpg 2x, assets/images/popular-article/image2.jpg 1x" 
+                                            width="218"
+                                            height="149"
+                                            alt="Advancements in artificial">
+                                    </picture>
+                                </div>
+                                <div class="caption">
+                                    <div class="name">Advancements in artificial intelligence are revolutionizing industries across the globe.</div>
+                                    <div class="flex line-info">
+                                        <div class="date-row flex">
+                                            <div class="length">4 min</div>
+                                            <div class="views">2832</div>    
+                                        </div>
+                                        <a href="/blog" class="more btn btn-small"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 7.71729H14.435M14.435 7.71729L7.71751 0.999771M14.435 7.71729L7.71751 14.4348" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                                    </div>    
+                                </div>
+                            </div> 
+                            <div class="item flex">
+                                <div class="image">  
+                                    <picture>
+                                        <source 
+                                            srcset="assets/images/popular-article/image3_2x.webp 2x, assets/images/popular-article/image3.webp 1x" 
+                                            type="image/webp">
+                                        <source 
+                                            srcset="assets/images/popular-article/image1_2x.jpg 2x, assets/images/popular-article/image3.jpg 1x" 
+                                            type="image/jpg">
+                                        <img 
+                                            class="img-responsive"
+                                            src="assets/images/popular-article/image3.jpg" 
+                                            srcset="assets/images/popular-article/image3_2x.jpg 2x, assets/images/popular-article/image1.jpg 1x" 
+                                            width="218"
+                                            height="149"
+                                            alt="Advancements in artificial">
+                                    </picture>
+                                </div>
+                                <div class="caption">
+                                    <div class="name">Advancements in artificial intelligence are revolutionizing industries across the globe.</div>
+                                    <div class="flex line-info">
+                                        <div class="date-row flex">
+                                            <div class="length">4 min</div>
+                                            <div class="views">2832</div>    
+                                        </div>
+                                        <a href="/blog" class="more btn btn-small"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 7.71729H14.435M14.435 7.71729L7.71751 0.999771M14.435 7.71729L7.71751 14.4348" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
                                     </div>    
                                 </div>
                             </div>            
                         </div>
                     </div>
-                    <div class="info-slide">
-                        <div>
+                    <div class="info-slide flex">
+                        <div class="flex flex-column caption">
                             <h3 class="font-asap">My Revolutionary Bullshits About 'Atomic Habit'</h3>
-                            <div class="author">Saman Fregh</div>
-                            <div class="category">Technology</div>
-                            <div class="description">The future of transportation is here, and it's electric. With the rise of electric cars and public transportation, we're seeing a shift towards more sustainable and environmentally friendly modes of travel. As battery technology continues to improve, we can expect to see even more innovative and efficient electric vehicles hitting the road in the coming years.</div>
-                            <div class="date-row">
-                                <div class="views">2832</div>
-                                <div class="length">4 min</div>
-                                <div class="date">July 28, 2021</div>
+                            <div class="author flex">
+                                <div>
+                                    <picture>
+                                        <source 
+                                            srcset="assets/images/saman-faegh-face_2x.webp 2x, assets/images/saman-faegh-face.webp 1x" 
+                                            type="image/webp">
+                                        <source 
+                                            srcset="assets/images/saman-faegh-face_2x.png 2x, assets/images/saman-faegh-face.png 1x" 
+                                            type="image/png">
+                                        <img 
+                                            class="img-responsive rounded"
+                                            src="assets/images/saman-faegh-face.png" 
+                                            srcset="assets/images/saman-faegh-face_2x.png 2x, assets/images/saman-faegh-face.png 1x" 
+                                            width="46"
+                                            height="46"
+                                            alt="Saman Fregh">
+                                    </picture>
+                                </div>
+                                <p>
+                                    <strong class="dark">Saman Fregh</strong>
+                                    <span class="text-muted block">Author</span>   
+                                </p>
                             </div>
-                            <div class="label btn btn-black btn-small">New articles</div>
-                            <div class="active-slider-of">2/5</div>
+                            <div class="category">Technology</div>
+                            <div class="description">The future of transportation is here, and it's electric. With the rise of electric cars and public transportation, we're seeing a shift towards more sustainable and environmentally friendly modes of travel. As battery technology continues to improve.</div>
+                            <div class="flex relative">
+                                <div class="date-row flex">
+                                    <div class="views">2832</div>
+                                    <div class="length">4 min</div>
+                                    <div class="date">July 28, 2021</div>
+                                </div>
+                                <a href="/blog" class="btn btn-primary">
+                                    <svg class="stroke" width="10" height="10" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 1L11 10.5M11 10.5V1M11 10.5H1.5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    Read more
+                                </a>
+                            </div>
+                            <div class="label flex">
+                                <a href="/blog" class="btn btn-white">New articles</a>
+                            </div>
+                            <div class="active-slider-of font-asap">
+                                <span class="big">2</span>/5
+                            </div>
                         </div>
-                        <div class="active-slide">
-                            <div>IMG</div>
-                            <a class="btn btn-primary">Read more</a>
-                            <div class="navigation">
-                                <div class="arrow-left">AL</div>
-                                <div class="arrow-right">AR</div>
-                                <div class="pagination">Pagination</div>
+                        <div class="active-slide flex">
+                            <div class="image">
+                                <picture>
+                                    <source 
+                                        srcset="assets/images/new-article/new-article1_2x.webp 2x, assets/images/new-article/new-article1.webp 1x" 
+                                        type="image/webp">
+                                    <source 
+                                        srcset="assets/images/new-article/new-article1_2x.jpg 2x, assets/images/new-article/new-article1.jpg 1x" 
+                                        type="image/jpeg">
+                                    <img 
+                                        class="img-responsive"
+                                        src="assets/images/new-article/new-article1.jpg" 
+                                        srcset="assets/images/new-article/new-article1_2x.jpg 2x, assets/images/new-article/new-article1.jpg 1x" 
+                                        width="374"
+                                        height="593"
+                                        alt="My Revolutionary Bullshits About 'Atomic Habit'">
+                                </picture>
+                            </div>
+                            <div class="navigation flex">
+                                <button class="arrow arrow-left">
+                                    <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.5 1.5L1 9L8.5 16.5" stroke="#202020" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>        
+                                </button>
+                                <button class="arrow arrow-right">
+                                    <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 16.5L8.5 9L0.999999 1.5" stroke="#202020" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </button>
+                                <div class="pagination flex">
+                                    <span class="bullet"></span>
+                                    <span class="bullet active"></span>
+                                    <span class="bullet"></span>
+                                    <span class="bullet"></span>
+                                    <span class="bullet"></span>
+                                </div>
                             </div>
                         </div>    
                     </div>
                 </section>
-                <section>
+                <!-- <section>
                     <header>
                         <h2>Latest articles</h2>
                         <div class="tabs">
@@ -122,9 +261,9 @@
                         <a>24</a>
                         <a>R</a>
                     </div>
-                </section>
+                </section> -->
             </main>
-            <section>
+            <!-- <section>
                 <div class="social-media">
                     <p>
                         Social Media Seriously
@@ -163,7 +302,7 @@
                         <a href="/about-me.html">About me</a>
                     </li>
                 </ul>
-            </footer>
+            </footer> -->
         </div>
     </body>
 </html>
