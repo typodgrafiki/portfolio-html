@@ -437,7 +437,7 @@ button {background: none; border: none; border-radius: 0; outline: none}
 }
 
 /* blog */
-#blog .info-slide .author
+.author
 {
     align-items: center;
     gap: 0 8px;
@@ -469,6 +469,34 @@ button {background: none; border: none; border-radius: 0; outline: none}
 .posts-list
 {
     grid-template-columns: repeat(1, 1fr);
+}
+
+.posts-list .item
+{
+    gap: 10px 0;
+}
+
+.posts-list .image 
+{
+    margin-bottom: 6px;
+}
+
+.posts-list .name
+{
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.posts-list .description
+{
+    margin: 2px 0 7px;
+}
+
+.posts-list .btn 
+{
+    position: absolute;
+    right: 17px;
+    bottom: -25px;
 }
 
 .tabs
@@ -514,6 +542,14 @@ button {background: none; border: none; border-radius: 0; outline: none}
 #blog-list header 
 {
     margin-bottom: 55px;
+}
+
+@media (min-width: 768px) {
+    .posts-list
+    {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
 }
 
 @media (min-width: 991px) {
@@ -689,7 +725,6 @@ button {background: none; border: none; border-radius: 0; outline: none}
     .posts-list
     {
         grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
     }
     
 }

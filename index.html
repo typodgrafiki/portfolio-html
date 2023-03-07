@@ -220,7 +220,7 @@
                 <section id="blog-list"> 
                     <header class="flex justify-between align-center">
                         <h2 class="title font-asap relative">Latest articles</h2>
-                        <ul class="tabs nav flex">
+                        <ul class="tabs nav flex text-center">
                             <li>
                                 <a href="#blog-list-all" class="btn btn-small">All</a>    
                             </li>
@@ -246,8 +246,8 @@
                         </form>    
                     </header>
                     <div class="posts-list grid">
-                        <div class="item">
-                            <div class="image">
+                        <div class="item flex flex-column">
+                            <div class="image relative">
                                 <picture>
                                     <source 
                                         srcset="assets/images/last-articles/post1_2x.webp 2x, assets/images/last-articles/post1.webp 1x" 
@@ -263,35 +263,38 @@
                                         height="593"
                                         alt="My Revolutionary Bullshits About 'Atomic Habit'">
                                 </picture>
+                                <a href="/blog" class="btn btn-dark">
+                                    <svg class="stroke" width="10" height="10" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 1L11 10.5M11 10.5V1M11 10.5H1.5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </a>
                             </div>
-                            <div class="caption">
-                                <div class="author flex align-center">
-                                    <picture>
-                                        <source 
-                                            srcset="assets/images/saman-faegh-face_2x.webp 2x, assets/images/saman-faegh-face.webp 1x" 
-                                            type="image/webp">
-                                        <source 
-                                            srcset="assets/images/saman-faegh-face_2x.png 2x, assets/images/saman-faegh-face.png 1x" 
-                                            type="image/png">
-                                        <img 
-                                            class="img-responsive rounded"
-                                            src="assets/images/saman-faegh-face.png" 
-                                            srcset="assets/images/saman-faegh-face_2x.png 2x, assets/images/saman-faegh-face.png 1x" 
-                                            width="24"
-                                            height="24"
-                                            alt="Saman Fregh">
-                                    </picture>
-                                    <p><strong class="dark">Saman Fregh</strong></p>
-                                </div>
-                                <p>My Revolutionary Bullshits About 'Atomic Habit'</p>
-                                <div class="category">Technology</div>
-                                <div class="description">The future of transportation is here, and it's electric. With the rise of electric cars and public transportation, we're seeing a shift towards more sustainable and environmentally friendly modes of travel. As battery technology continues to improve, we can expect to see even more innovative and efficient electric vehicles hitting the road in the coming years.</div>
-                                <div class="date-row">
-                                    <div class="views">2832</div>
-                                    <div class="length">4 min</div>
-                                    <div class="date">July 28, 2021</div>
-                                </div>
+                            
+                            <div class="author flex align-center">
+                                <picture>
+                                    <source 
+                                        srcset="assets/images/saman-faegh-face_2x.webp 2x, assets/images/saman-faegh-face.webp 1x" 
+                                        type="image/webp">
+                                    <source 
+                                        srcset="assets/images/saman-faegh-face_2x.png 2x, assets/images/saman-faegh-face.png 1x" 
+                                        type="image/png">
+                                    <img 
+                                        class="img-responsive rounded"
+                                        src="assets/images/saman-faegh-face.png" 
+                                        srcset="assets/images/saman-faegh-face_2x.png 2x, assets/images/saman-faegh-face.png 1x" 
+                                        width="24"
+                                        height="24"
+                                        alt="Saman Fregh">
+                                </picture>
+                                <p>Saman Fregh</p>
                             </div>
+                            <p class="font-asap name">My Revolutionary Bullshits About 'Atomic Habit'</p>
+                            <div class="category">Technology</div>
+                            <div class="description">The future of transportation is here, and it's electric. With the rise of electric cars and public transportation, we're seeing a shift towards more sustainable and environmentally friendly modes of travel. As battery technology continues to improve, we can expect to see even more innovative and efficient electric vehicles hitting the road in the coming years.</div>
+                            <div class="date-row flex align-center">
+                                <div class="views">2832</div>
+                                <div class="length">4 min</div>
+                                <div class="date">July 28, 2021</div>
+                            </div>
+
                         </div>
                     </div>
                     <div class="pagination">
