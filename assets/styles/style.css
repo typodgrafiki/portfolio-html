@@ -78,7 +78,6 @@ button {background: none; border: none; border-radius: 0; outline: none}
 {
     max-width: 1310px;
     margin: 0 auto;
-    padding: 0 20px;
 }
 
 .dark-bg
@@ -236,32 +235,32 @@ button {background: none; border: none; border-radius: 0; outline: none}
     opacity: .5;
 }
 
-.views:before
+.posts-list .views:before
 {    
     background-image: url('../images/icon-watch.svg');
 }
 
-.dark-bg .views:before
+.views:before
 {    
     background-image: url('../images/icon-watch-white.svg');
 }
 
-.length:before
+.posts-list .length:before
 {
     background-image: url('../images/icon-time.svg');
 }
 
-.dark-bg .length:before
+.length:before
 {
     background-image: url('../images/icon-time-white.svg');
 }
 
-.date:before
+.posts-list .date:before
 {
     background-image: url('../images/icon-date.svg');
 }
 
-.dark-bg .date:before
+.date:before
 {
     background-image: url('../images/icon-date-white.svg');
 }
@@ -282,6 +281,12 @@ button {background: none; border: none; border-radius: 0; outline: none}
     background-color: #9d9d9d;
     vertical-align: middle;
     margin-right: 10px;
+}
+
+.active-slide .image * 
+{
+    height: 100%;
+    object-fit: cover;
 }
 
 .active-slider-of
@@ -460,6 +465,11 @@ button {background: none; border: none; border-radius: 0; outline: none}
     width: 32%;
 }
 
+.image img 
+{
+    width: 100%;
+}
+
 .item .image img
 {
     filter: grayscale(1);
@@ -568,7 +578,7 @@ button {background: none; border: none; border-radius: 0; outline: none}
 /* header */
 #top 
 {
-    padding-top: 12px;
+    padding: 12px 20px 30px;
     align-items: flex-start;
 }
 
@@ -618,6 +628,44 @@ button {background: none; border: none; border-radius: 0; outline: none}
 #blog h1
 {
     order: 1;
+    font-size: 47px;
+    margin: 0;
+    padding-bottom: 65px;
+    overflow: hidden;
+}
+
+#blog h1:before
+{
+    content: url('../images/icon-title.svg');
+    display: block;
+    position: absolute;    
+    bottom: 20%;
+    right: 17%;
+}
+
+#blog h1:after
+{
+    content: url('../images/icon-title-line.svg');
+    display: block;
+    position: absolute;  
+    height: 76%;
+    width: 59%;
+    bottom: 0;
+    left: -1px;  
+}
+
+#blog h1 .relative:before
+{
+    content: '';
+    display: block;
+    background-color: var(--primary);
+    opacity: .2;
+    height: 48px;
+    width: 70px;
+    position: absolute;
+    bottom: -12px;
+    right: -15px;
+    z-index: -1;
 }
 
 #blog .info-slide .author .block
@@ -651,6 +699,30 @@ button {background: none; border: none; border-radius: 0; outline: none}
 #blog .info-slide
 {
     order: 2;
+}
+
+.info-slide .caption
+{
+    gap: 22px 0;
+}
+
+#blog .info-slide .author
+{
+    order: -1;
+}
+
+#blog .info-slide .label
+{
+    order: -2;    
+    justify-content: flex-end;
+    position: absolute;
+    top: -25px;
+}
+
+#blog .info-slide .description
+{
+    text-align: justify;
+    margin-bottom: 10px;
 }
 
 /* Blog-list: Sekcja 2 */
@@ -797,6 +869,11 @@ button {background: none; border: none; border-radius: 0; outline: none}
 }
 
 @media (min-width: 768px) {
+    .container 
+    {
+        padding: 0 20px;
+    }
+    
     .visible-xs
     {
         display: none;
@@ -836,7 +913,7 @@ button {background: none; border: none; border-radius: 0; outline: none}
         justify-content: space-between;
         align-items: center;
         margin-bottom: 50px;
-        padding-top: 50px;
+        padding: 50px 0 0;
     }
     
     #top .btn-dark 
@@ -887,6 +964,11 @@ button {background: none; border: none; border-radius: 0; outline: none}
         margin-bottom: 55px;
     }
     
+    #blog h1
+    {
+        font-size: 66px;
+    }
+    
     #blog .info-slide
     {
         grid-column: span 2;
@@ -899,49 +981,6 @@ button {background: none; border: none; border-radius: 0; outline: none}
         order: 3;
     }
     
-    #blog h1
-    {
-        order: 2;
-        font-size: 66px;
-        margin: 0;
-        padding-bottom: 65px;
-        overflow: hidden;
-    }
-    
-    #blog h1:before
-    {
-        content: url('../images/icon-title.svg');
-        display: block;
-        position: absolute;    
-        bottom: 20%;
-        right: 17%;
-    }
-    
-    #blog h1:after
-    {
-        content: url('../images/icon-title-line.svg');
-        display: block;
-        position: absolute;  
-        height: 76%;
-        width: 59%;
-        bottom: 0;
-        left: -1px;  
-    }
-    
-    #blog h1 .relative:before
-    {
-        content: '';
-        display: block;
-        background-color: var(--primary);
-        opacity: .2;
-        height: 48px;
-        width: 70px;
-        position: absolute;
-        bottom: -12px;
-        right: -15px;
-        z-index: -1;
-    }
-    
     #blog .info-slide > div
     {
         width: 50%;
@@ -950,7 +989,6 @@ button {background: none; border: none; border-radius: 0; outline: none}
     #blog .info-slide .caption
     {
         padding-top: 35px;    
-        gap: 22px 0;
     }
     
     #blog .info-slide .caption:before 
@@ -961,17 +999,6 @@ button {background: none; border: none; border-radius: 0; outline: none}
         bottom: -14px;
         right: -1px;
         z-index: -1;
-    }
-    
-    #blog .info-slide .author
-    {
-        order: -1;
-    }
-    
-    #blog .info-slide .label
-    {
-        order: -2;    
-        justify-content: flex-end;
     }
     
     #blog .info-slide .label .btn
@@ -985,12 +1012,6 @@ button {background: none; border: none; border-radius: 0; outline: none}
         margin-right: -31%;
         position: relative;
         margin-top: -4%;
-    }
-    
-    #blog .info-slide .description
-    {
-        text-align: justify;
-        margin-bottom: 10px;
     }
     
     #blog .info-slide .btn-primary 
@@ -1025,12 +1046,6 @@ button {background: none; border: none; border-radius: 0; outline: none}
     {
         flex-grow: 1;
         margin-bottom: -1px;
-    }
-    
-    #blog .active-slide .image * 
-    {
-        height: 100%;
-        object-fit: cover;
     }
     
     #blog .info-slide .date-row
@@ -1084,10 +1099,21 @@ button {background: none; border: none; border-radius: 0; outline: none}
     
     #top nav 
     {
-        position: absolute;
+        position: fixed;
         visibility: hidden;
         opacity: 0;
         transition: opacity .4s ease; 
+        background: rgb(255 255 255 / 95%);
+        z-index: 4;
+        padding: 70px 30px 30px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
     }
     
     #button-menu
@@ -1098,8 +1124,10 @@ button {background: none; border: none; border-radius: 0; outline: none}
         width: 40px;
         height: 40px;
         position: fixed;
+        z-index: 5;
         top: 15px;
         right: 15px;
+        cursor: pointer;
     }
 
     #button-menu > span 
@@ -1111,6 +1139,7 @@ button {background: none; border: none; border-radius: 0; outline: none}
         position: absolute;
         left: 12px;
         top: 14px;
+        pointer-events: none;
         transition: all .3s ease;
     }
     
@@ -1165,4 +1194,53 @@ button {background: none; border: none; border-radius: 0; outline: none}
         visibility: visible;
     }
     
+    #top li.active .btn:before, #top li .btn:is(:hover, :focus, :active):not(.btn-dark):before
+    {
+        left: 30px;
+        right: 30px;
+        width: auto;
+        bottom: 23px;
+        opacity: .3;   
+    }
+    
+    .info-slide .caption 
+    {
+        background-color: rgb(18 18 18 / 58%);
+        color: #bbb;
+        padding: 20% 8% 13%;
+    }
+    
+    .active-slide
+    {
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+    }
+    
+    .active-slide .image
+    {
+        height: 100%;
+    }
+    
+    .info-slide .caption .text-muted
+    {
+        color: inherit;    
+    }
+    
+    .info-slide .caption .font-asap,
+    .info-slide .caption .dark
+    {
+        color: #fff;
+    }
+
+    #blog .info-slide .description 
+    {
+        margin: 20px 0 23px;
+    }
+    
+    #blog .navigation
+    {
+        order: 2;
+    }
+
 }
