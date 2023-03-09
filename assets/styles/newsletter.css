@@ -1,0 +1,150 @@
+@keyframes newsletter-success-path1 {
+    0% {
+        transform: translate(-2px, 5px) rotate(0);
+        stroke: #8342fd;
+    }
+    50%{
+        stroke: var(--primary);
+        transform: translate(0px, 40px) rotate(-60deg);
+    }
+    100% {
+        stroke: #8342fd;
+        transform: translate(-2px, 5px) rotate(0);
+    }
+}
+
+@keyframes newsletter-success-path2 {
+    0% {
+        transform: translate(0, 0);
+        fill: #fac714;
+    }
+    50%{
+        fill: var(--primary);
+        transform: translate(30px, -26px);
+    }
+    100% {
+        fill: #fac714;
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes newsletter-success-path3 {
+    0% {
+        transform: translate(-2px, 2px) rotate(0);
+        stroke: var(--primary);
+    }
+    50%{
+        stroke: #fac714;
+        transform: translate(8px, -8px) rotate(-10deg);
+    }
+    100% {
+        stroke: var(--primary);
+        transform: translate(-2px, 2px) rotate(0);
+    }
+}
+
+@keyframes newsletter-success-path4 {
+    0% {
+        transform: translate(0, 0) rotate(0);
+        stroke: #fac714;
+    }
+    40%{
+        stroke: var(--primary);
+        transform: translate(40px, -30px) rotate(15deg);
+    }
+    80% {
+        stroke: #fac714;
+        transform: translate(0, 0) rotate(0);
+    }
+    100% {
+        stroke: #fac714;
+        transform: translate(0, 0) rotate(0);
+    }
+}
+
+@keyframes newsletter-success-path5 {
+    0% {
+        transform: translate(0, 0);
+        fill: #fac714;
+    }
+    50%{
+        fill: var(--primary);
+        transform: translate(-20px, -10px) rotate(-20deg);
+    }
+    100% {
+        fill: #fac714;
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes newsletter-success-path6 {
+    0% {
+        transform: translate(0, 0);
+        fill: #8342fd;
+    }
+    50%{
+        fill: #fac714;
+        transform: translate(-25px, -6px);
+    }
+    100% {
+        fill: #8342fd;
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes newsletter-success-path7 {
+    0% {
+        transform: translate(0, 0);
+        fill: #8342fd;
+    }
+    50%{
+        fill: #fac714;
+        transform: translate(25px, -6px);
+    }
+    100% {
+        fill: #8342fd;
+        transform: translate(0, 0);
+    }
+}
+
+#newsletter-success .animate-path
+{
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#newsletter-success .path1
+{
+    animation-name: newsletter-success-path1;
+}
+
+#newsletter-success .path3
+{
+    animation-name: newsletter-success-path3;
+}
+
+#newsletter-success .path2
+{
+    animation-name: newsletter-success-path2;
+}
+
+#newsletter-success .path4
+{
+    animation-name: newsletter-success-path4;
+}
+
+#newsletter-success .path5
+{
+    animation-name: newsletter-success-path5;
+}
+
+#newsletter-success .path6
+{
+    animation-name: newsletter-success-path6;
+}
+
+#newsletter-success .path7
+{
+    animation-name: newsletter-success-path7;
+}

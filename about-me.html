@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="assets/styles/normalize.css" /> 
+        <link rel="stylesheet" type="text/css" href="assets/styles/style.css" /> 
+        <link rel="stylesheet" type="text/css" href="assets/styles/about-me.css" /> 
+        <script type="module" src="assets/js/simple-scripts.js" defer></script>
+        <title>HTML/CSS Portfolio &#8226; Grzegorz Kocik</title>
+        <meta name="author" content="Grzegorz Kocik" />
+        <meta name="description" content="HTML/CSS Portfolio Projekt [...]" />
+        <meta name="keywords"  content="html, css, portfolio, [...]" />
+        <link href="icons/favicon-light.png" rel="icon" media="(prefers-color-scheme: light)" />
+        <link href="icons/favicon-dark.png" rel="icon" media="(prefers-color-scheme: dark)" />
+        <link rel="apple-touch-icon" href="icons/logo192-light.png" media="(prefers-color-scheme: light)" />
+        <link rel="apple-touch-icon" href="icons/logo192-dark.png" media="(prefers-color-scheme: dark)" />
+    </head>
+    <body>
+        <div class="container">
+            <header id="top" class="flex">
+                <div id="logo">
+                    <a href="/">
+                        <img src="assets/images/logo.svg" alt="Logo Saman Faegh" width="168" height="49" loading="lazy" />
+                    </a>
+                </div>
+                <button id="button-menu" class="visible-xs relative"><span></span><span></span><span></span></button>
+                <nav>
+                    <ul class="nav flex-sm">
+                        <li>
+                            <a href="/" class="btn">Home</a>
+                        </li>
+                        <li>
+                            <a href="/blog.html" class="btn">Blog</a>
+                        </li>
+                        <li class="active">
+                            <a href="/about-me.html" class="btn">About Me</a>
+                        </li>
+                        <li>
+                            <a href="/about-me.html#contact-form" class="btn btn-dark btn-contact relative"><span class="relative">Contact Me</span></a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <section id="blog-list" class="container-xs relative"> 
+                    <header class="flex-sm justify-between align-center">
+                        <h2 class="title font-asap relative">Articles</h2>
+                    </header>
+                    <div class="content grid">
+                        <div>
+                            <h2 class="font-asap">About Me</h2>
+                            <p>Hello and welcome to my tech blog! My name is Saman and I am a passionate tech enthusiast with a love for all things related to the latest gadgets, software, and emerging technologies. I created this blog to share my knowledge, insights, and opinions on the latest developments in the tech world.</p>
+                        
+                            <h2 class="font-asap">My Background</h2>
+                            <p>I have always been fascinated by technology and how it has the power to transform our lives. From the earliest days of my childhood, I have been tinkering with computers and exploring the latest software and hardware. This passion led me to pursue a degree in Computer Science and eventually to start this tech blog.</p>
+                            <p>Throughout my career, I have worked with a variety of tech companies and startups, giving me a unique perspective on the industry. I have seen firsthand how technology can solve complex problems, streamline processes, and make our lives easier and more enjoyable. Now, I want to share my knowledge and experience with you through my tech blog.</p>
+
+                            <h2 class="font-asap">What You Can Expect From My Blog</h2>
+                            <p>My blog covers a wide range of topics, including the latest trends in mobile and web development, artificial intelligence and machine learning, cybersecurity, and much more. I strive to provide high-quality, informative content that is accessible to both beginners and experts in the tech industry.</p>
+                            <p>One of the things that sets my blog apart is my commitment to staying up-to-date with the latest developments in the tech world. I attend conferences, participate in online communities, and read industry publications to ensure that my readers are getting the most accurate and timely information possible.</p>
+
+                            <h2 class="font-asap">Why You Should Read My Blog</h2>
+                            <p>If you are looking for insights into the latest tech trends and want to stay up-to-date on the latest developments in the industry, then my blog is the perfect place for you. I offer a unique perspective on the latest tech news and trends, and I am dedicated to helping my readers understand the impact that technology can have on our lives.</p>
+                            <p>Whether you are a tech professional, entrepreneur, or simply someone who is interested in the latest gadgets and software, my blog has something for everyone. I hope that you will join me on this journey as we explore the ever-evolving world of technology together.</p>
+                        
+                            <h2 class="font-asap">Contact Me</h2>
+                            <p>If you have any questions, comments, or suggestions, I would love to hear from you! You can reach me through the contact form on my website or connect with me on social media. Thank you for visiting my blog, and I look forward to connecting with you soon.</p>
+                        </div>
+                        <div id="contact-form">
+                            <h2 class="font-asap">Contact Me</h2>
+                            <form action="mailto:test@example.com" method="post" enctype="text/plain">
+                                <label for="input_name">Name:</label>
+                                <input type="text" id="input_name" name="name" class="form-control" placeholder="John Novak" required>
+                                <label for="name_email">E-mail:</label>
+                                <input type="email" id="input_email" name="email" class="form-control" placeholder="mr.jo@example.com" required>
+                                <label for="input_message">Message:</label>
+                                <textarea id="input_message" name="message" rows="5" class="form-control" placeholder="Your message..." required></textarea>
+                                <button type="submit" class="btn btn-primary btn-arrow-right relative">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <div class="footer">
+            <section class="container flex-sm justify-between">
+                <div id="social-media" class="flex-md justify-between">
+                    <p>
+                        Social Media Seriously
+                        <strong class="text-dark block">Harm Your Mental Helth</strong>
+                    </p>
+                    <div class="icons">
+                        <a href="https://twitter.com/" class="btn btn-grey btn-small" target="_blank" rel="nofollow noreferer">
+                            <svg class="fill" width="24" height="19" viewBox="0 0 33 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.923 4.6272C23.5872 4.63612 24.2429 4.77589 24.8508 5.03816C25.4587 5.30044 26.0065 5.67985 26.4614 6.15379C26.4614 6.15379 28.3924 5.78265 29.4589 5.04781C29.4589 5.04781 29.191 6.50265 27.4142 7.61605H27.4294C27.5659 7.61605 28.5617 7.5913 30.1287 6.87378C30.1287 6.87378 29.8279 7.71254 27.7782 9.30841C27.902 13.0841 25.9938 20.0638 18.9321 22.5479C17.3812 23.1033 15.7435 23.3905 14.0921 23.3966C11.4463 23.4084 8.85464 22.6628 6.63609 21.2514C7.01521 21.2885 7.35641 21.2885 7.69762 21.2885C11.873 21.2885 13.8949 19.1904 13.7837 19.1904H13.6295C10.0911 19.1904 9.22925 15.875 9.22925 15.875C9.51264 16.0427 9.84143 16.1221 10.172 16.1026C10.5992 16.0939 11.0237 16.0332 11.4357 15.922C7.44235 14.9966 7.59146 11.2457 7.59146 11.2457C8.13111 11.5983 8.76256 11.7923 9.41123 11.8049C9.51792 11.8061 9.62451 11.7978 9.72968 11.7801C6.08258 8.95459 8.27893 5.58224 8.27893 5.58224C12.3886 10.2511 17.4409 10.4169 18.136 10.4169H18.2194C17.8453 8.2247 18.7678 6.11915 21.2523 4.97359C21.7706 4.74059 22.335 4.62232 22.9053 4.6272M32.2893 1L28.5162 3.74143C28.0171 4.03431 27.4774 4.25514 26.9138 4.39709C25.77 3.52273 24.364 3.04106 22.9128 3.02638C22.1016 3.01903 21.2988 3.18804 20.5623 3.52122C18.2421 4.58761 16.8318 6.42842 16.5513 8.6379C13.8045 8.08332 11.3295 6.63694 9.52749 4.53318L8.08684 2.89772L6.89894 4.71132C6.13313 5.9463 5.82937 7.40337 6.03961 8.83336L5.9461 11.1913C5.92511 12.6881 6.43315 14.1461 7.38421 15.3183L7.63696 16.2832C7.99946 17.5293 8.7355 18.6403 9.7499 19.4725C9.07502 19.617 8.38593 19.6884 7.69509 19.6853C7.39432 19.6853 7.08345 19.6729 6.77004 19.6481L0.974609 19.1756L5.66302 22.5479C8.16501 24.1594 11.0971 25.0123 14.0921 24.9999C15.9353 24.995 17.7637 24.6769 19.4957 24.0597C22.9704 22.8458 25.8377 20.3745 27.5077 17.1541C28.663 14.955 29.3159 12.5362 29.421 10.0655C31.0967 8.65274 31.5567 7.75213 31.6806 7.40821L32.9746 3.80328L31.2054 4.60988L32.2893 1Z"/>
+                            </svg>                                
+                        </a>
+                        <a href="https://www.linkedin.com/" class="btn btn-grey btn-small" target="_blank" rel="nofollow noreferer">
+                            <svg class="fill" width="19" height="19" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.33789 25.5H0.0878906V8H5.33789V25.5ZM24.5879 25.5H19.3379V16.1515C19.3379 13.7155 18.4699 12.5027 16.7496 12.5027C15.3864 12.5027 14.5219 13.1817 14.0879 14.5415C14.0879 16.75 14.0879 25.5 14.0879 25.5H8.83789C8.83789 25.5 8.90789 9.75 8.83789 8H12.9819L13.3021 11.5H13.4106C14.4869 9.75 16.2071 8.5635 18.5661 8.5635C20.3599 8.5635 21.8106 9.06225 22.9184 10.3152C24.0331 11.57 24.5879 13.2535 24.5879 15.6177V25.5Z"/>
+                                <path d="M2.7125 6.25C4.21057 6.25 5.425 5.07475 5.425 3.625C5.425 2.17525 4.21057 1 2.7125 1C1.21443 1 0 2.17525 0 3.625C0 5.07475 1.21443 6.25 2.7125 6.25Z"/>
+                            </svg>                                
+                        </a>
+                        <a href="https://www.instagram.com/" class="btn btn-grey btn-small" target="_blank" rel="nofollow noreferer">
+                            <svg class="fill" width="19" height="19" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.5004 6.23779C8.97222 6.23779 6.04883 9.2257 6.04883 12.9475C6.04883 16.6692 8.92181 19.6571 12.5004 19.6571C16.0791 19.6571 18.9521 16.6168 18.9521 12.9475C18.9521 9.27812 16.0287 6.23779 12.5004 6.23779ZM12.5004 17.2459C10.2323 17.2459 8.36738 15.3063 8.36738 12.9475C8.36738 10.5886 10.2323 8.64908 12.5004 8.64908C14.7686 8.64908 16.6335 10.5886 16.6335 12.9475C16.6335 15.3063 14.7686 17.2459 12.5004 17.2459Z" />
+                                <path d="M19.2039 7.60087C20.0112 7.60087 20.6656 6.92027 20.6656 6.08071C20.6656 5.24115 20.0112 4.56055 19.2039 4.56055C18.3966 4.56055 17.7422 5.24115 17.7422 6.08071C17.7422 6.92027 18.3966 7.60087 19.2039 7.60087Z" />
+                                <path d="M22.9839 2.14919C21.6734 0.733871 19.8085 0 17.6915 0H7.30847C2.92339 0 0 3.04032 0 7.60081V18.3468C0 20.6008 0.705645 22.5403 2.11694 23.9556C3.47782 25.3185 5.29234 26 7.35887 26H17.6411C19.8085 26 21.623 25.2661 22.9335 23.9556C24.2944 22.5927 25 20.6532 25 18.3992V7.60081C25 5.39919 24.2944 3.5121 22.9839 2.14919ZM22.7823 18.3992C22.7823 20.0242 22.2278 21.3347 21.3206 22.2258C20.4133 23.1169 19.1532 23.5887 17.6411 23.5887H7.35887C5.84677 23.5887 4.58669 23.1169 3.67944 22.2258C2.77218 21.2823 2.31855 19.9718 2.31855 18.3468V7.60081C2.31855 6.02823 2.77218 4.71774 3.67944 3.77419C4.53629 2.88306 5.84677 2.41129 7.35887 2.41129H17.7419C19.254 2.41129 20.5141 2.88306 21.4214 3.82661C22.2782 4.77016 22.7823 6.08064 22.7823 7.60081V18.3992Z" />
+                            </svg>                                
+                        </a>
+                    </div>
+                </div>
+                <div id="newsletter" class="newsletter">
+                    <hgroup class="font-asap text-center">
+                        <h4 class="title">Subscribe</h4>
+                        <p>To newsletter</p>
+                    </hgroup>
+                    <form action="/newsletter.html">
+                        <label for="newsletter-input">Email adress</label>
+                        <div class="flex row">
+                            <input type="email" class="form-control" placeholder="mr.jo@example.com" name="newsletter-input" id="newsletter-input" required />
+                            <button type="submit" class="btn btn-primary relative btn-arrow-right">Subscribe</button>    
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <footer class="dark-bg">
+                <div class="container flex justify-between align-center">
+                    <div class="copyright">
+                        &copy; All rights Reserved By <strong class="white">Saman Faegh</strong>
+                    </div>
+                    <ul class="nav links flex">
+                        <li>
+                            <a href="#top">Home</a>
+                        </li>
+                        <li>
+                            <a href="/blog.html">Blog</a>
+                        </li>
+                        <li>
+                            <a href="/about-me.html">About me</a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
