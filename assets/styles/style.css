@@ -283,6 +283,18 @@ button {background: none; border: none; border-radius: 0; outline: none}
     margin-right: 10px;
 }
 
+.active-slide
+{
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+
+.active-slide .image
+{
+    height: 100%;
+}
+
 .active-slide .image * 
 {
     height: 100%;
@@ -697,6 +709,11 @@ button {background: none; border: none; border-radius: 0; outline: none}
     order: 2;
 }
 
+#blog .navigation
+{
+    order: 2;
+}
+
 .info-slide .caption
 {
     gap: 22px 0;
@@ -705,12 +722,28 @@ button {background: none; border: none; border-radius: 0; outline: none}
     padding: 20% 8% 13%;
 }
 
-#blog .info-slide .author
+.info-slide .caption .text-muted
+{
+    color: inherit;    
+}
+
+.info-slide .caption .font-asap,
+.info-slide .caption .dark
+{
+    color: #fff;
+}
+
+.info-slide .description 
+{
+    margin: 20px 0 23px;
+}
+
+.info-slide .author
 {
     order: -1;
 }
 
-#blog .info-slide .label
+.info-slide .label
 {
     order: -2;    
     justify-content: flex-end;
@@ -718,7 +751,7 @@ button {background: none; border: none; border-radius: 0; outline: none}
     top: -25px;
 }
 
-#blog .info-slide .description
+.info-slide .description
 {
     text-align: justify;
     margin-bottom: 10px;
@@ -1142,6 +1175,32 @@ button {background: none; border: none; border-radius: 0; outline: none}
         z-index: -1;
     }
     
+    .info-slide .caption .text-muted
+    {
+        color: var(--gray);    
+    }
+    
+    .info-slide .caption .font-asap,
+    .info-slide .caption .dark
+    {
+        color: var(--dark);
+    }
+    
+    .info-slide .description 
+    {
+        margin: 0 0 10px 0;
+    }
+    
+    .active-slide
+    {
+        position: static;
+    }
+    
+    .active-slide .image
+    {
+        height: auto;
+    }
+    
     .active-slider-of .big
     {
         color: var(--dark);
@@ -1354,48 +1413,5 @@ button {background: none; border: none; border-radius: 0; outline: none}
     .hidden-sm
     {
         display: none;
-    }
-}
-
-
-
-
-
-
-/* to zmienic */
-@media (max-width: 991px) {
-    
-    
-    .active-slide
-    {
-        position: absolute;
-        inset: 0;
-        z-index: -1;
-    }
-    
-    .active-slide .image
-    {
-        height: 100%;
-    }
-    
-    .info-slide .caption .text-muted
-    {
-        color: inherit;    
-    }
-    
-    .info-slide .caption .font-asap,
-    .info-slide .caption .dark
-    {
-        color: #fff;
-    }
-
-    #blog .info-slide .description 
-    {
-        margin: 20px 0 23px;
-    }
-    
-    #blog .navigation
-    {
-        order: 2;
     }
 }
