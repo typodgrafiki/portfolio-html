@@ -88,7 +88,7 @@ button {background: none; border: none; border-radius: 0; outline: none}
 
 .title
 {
-    font-size: 34px;
+    font-size: 28px;
 }
 
 .dark-bg h1,
@@ -301,7 +301,6 @@ button {background: none; border: none; border-radius: 0; outline: none}
 
 .active-slider-of .big
 {
-    color: var(--dark);
     font-weight: 600;
     font-size: 60px;    
 }
@@ -357,22 +356,10 @@ button {background: none; border: none; border-radius: 0; outline: none}
 .pagination 
 {
     font-weight: 400;
-    margin-top: 80px;
+    margin-top: 60px;
     background-color: #fff;
     gap: 1.6%;
     padding: 10px;
-}
-
-.pagination:before 
-{
-    content: '';
-    display: block;
-    background-color: #fff;
-    position: absolute;
-    top: 0;
-    right: 100%;
-    bottom: 0;
-    left: -50vw;
 }
 
 .pagination a[data-page] 
@@ -505,11 +492,8 @@ button {background: none; border: none; border-radius: 0; outline: none}
 .newsletter
 {
     background-color: #d0d0d0;
-}
-
-.newsletter hgroup
-{
-    margin-top: -24px;
+    margin-top: 40px;
+    padding-top: 20px;
 }
 
 .newsletter hgroup p
@@ -528,6 +512,11 @@ button {background: none; border: none; border-radius: 0; outline: none}
 .newsletter form
 {
     padding: 15px 9% 8%;
+}
+
+.newsletter .row 
+{
+    flex-direction: column;
 }
 
 .newsletter .form-control 
@@ -553,6 +542,7 @@ button {background: none; border: none; border-radius: 0; outline: none}
 {
     display: flex;
     overflow: hidden;
+    justify-content: center;
 }
 
 .newsletter .btn:after
@@ -625,6 +615,11 @@ button {background: none; border: none; border-radius: 0; outline: none}
     gap: 0 8px;
 }
 
+#blog 
+{
+    margin-bottom: 40px;
+}
+
 #blog h1
 {
     order: 1;
@@ -652,6 +647,7 @@ button {background: none; border: none; border-radius: 0; outline: none}
     width: 59%;
     bottom: 0;
     left: -1px;  
+    z-index: -1;
 }
 
 #blog h1 .relative:before
@@ -704,6 +700,9 @@ button {background: none; border: none; border-radius: 0; outline: none}
 .info-slide .caption
 {
     gap: 22px 0;
+    background-color: rgb(18 18 18 / 58%);
+    color: #bbb;
+    padding: 20% 8% 13%;
 }
 
 #blog .info-slide .author
@@ -729,6 +728,7 @@ button {background: none; border: none; border-radius: 0; outline: none}
 .posts-list
 {
     grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
 }
 
 #blog-list .posts-list
@@ -744,27 +744,6 @@ button {background: none; border: none; border-radius: 0; outline: none}
 .posts-list .item
 {
     gap: 10px 0;
-}
-
-.posts-list .item:before 
-{
-    content: '';
-    display: block;
-    position: absolute;
-    background-color: transparent;
-    inset: -20px;
-    z-index: -1;
-    transition: background-color .4s ease;
-}
-
-.posts-list .item:hover:before 
-{
-    background-color: #fff;
-}
-
-.posts-list .image 
-{
-    margin-bottom: 6px;
 }
 
 .posts-list .name
@@ -838,8 +817,14 @@ button {background: none; border: none; border-radius: 0; outline: none}
 
 #blog-list header 
 {
-    margin-bottom: 55px;
+    margin-bottom: 25px;
     gap: 0 5%;
+}
+
+#social-media .icons 
+{
+    text-align: center;
+    margin-top: 10px;
 }
 
 #social-media p
@@ -854,7 +839,6 @@ button {background: none; border: none; border-radius: 0; outline: none}
 
 .footer 
 {
-    margin-top: 30px;
     font-size: .9rem;
 }
 
@@ -878,16 +862,7 @@ button {background: none; border: none; border-radius: 0; outline: none}
     {
         display: none;
     }
-    
-    .posts-list
-    {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 40px;
-    }
-}
-
-@media (min-width: 991px) {
-        
+       
     .btn-small
     {
         padding: 10px 15px;
@@ -906,6 +881,11 @@ button {background: none; border: none; border-radius: 0; outline: none}
     .container 
     {
         padding: 0 50px;
+    }
+    
+    .title
+    {
+        font-size: 34px;
     }
     
     #top
@@ -959,7 +939,7 @@ button {background: none; border: none; border-radius: 0; outline: none}
     /* Blog: Section 1 */
     #blog
     {
-        grid-template-columns: 1fr 1fr 1.5fr;
+        grid-template-columns: 1fr 1fr 2fr;
         grid-template-rows: auto 1fr;
         margin-bottom: 55px;
     }
@@ -967,6 +947,7 @@ button {background: none; border: none; border-radius: 0; outline: none}
     #blog h1
     {
         font-size: 66px;
+        order: 2;
     }
     
     #blog .info-slide
@@ -981,37 +962,20 @@ button {background: none; border: none; border-radius: 0; outline: none}
         order: 3;
     }
     
-    #blog .info-slide > div
+    .info-slide .caption
     {
-        width: 50%;
+        padding-top: 35px;
     }
     
-    #blog .info-slide .caption
+    #blog .info-slide .label
     {
-        padding-top: 35px;    
-    }
-    
-    #blog .info-slide .caption:before 
-    {
-        content: url('../images/icon-title-line2.svg');
-        display: block;
-        position: absolute;
-        bottom: -14px;
-        right: -1px;
-        z-index: -1;
+        position: static;
     }
     
     #blog .info-slide .label .btn
     {
         position: relative;
         right: -60px;
-    }
-    
-    #blog .info-slide h3 
-    {
-        margin-right: -31%;
-        position: relative;
-        margin-top: -4%;
     }
     
     #blog .info-slide .btn-primary 
@@ -1037,11 +1001,6 @@ button {background: none; border: none; border-radius: 0; outline: none}
         margin-right: 10px;
     }
     
-    #blog .info-slide .caption
-    {
-        padding-right: 20px;
-    }
-    
     #blog .active-slide .image 
     {
         flex-grow: 1;
@@ -1055,19 +1014,67 @@ button {background: none; border: none; border-radius: 0; outline: none}
     
     .posts-list
     {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 54px;
+    }
+    
+    .posts-list .item:before 
+    {
+        content: '';
+        display: block;
+        position: absolute;
+        background-color: transparent;
+        inset: -20px;
+        z-index: -1;
+        transition: background-color .4s ease;
+    }
+
+    .posts-list .item:hover:before 
+    {
+        background-color: #fff;
+    }
+    
+    .posts-list .image 
+    {
+        margin-bottom: 6px;
+    }
+    
+    .info-slide .views:before
+    {    
+        background-image: url('../images/icon-watch.svg');
+    }
+
+    .info-slide .length:before
+    {
+        background-image: url('../images/icon-time.svg');
+    }
+
+    .info-slide .date:before
+    {
+        background-image: url('../images/icon-date.svg');
+    }
+    
+    #blog-list header 
+    {
+        margin-bottom: 55px;
     }
     
     .pagination 
     {
-        width: 45%;
+        width: 50%;
+        margin-top: 80px;
     }
     
     .newsletter
     {
         width: 43%;
         margin-top: -15px;
+        padding-top: 0;
+    }
+    
+    .newsletter hgroup
+    {
+        margin-top: -24px;
     }
     
     #social-media
@@ -1087,6 +1094,96 @@ button {background: none; border: none; border-radius: 0; outline: none}
         margin-top: 3px;
     }
     
+    .footer 
+    {
+        margin-top: 30px;
+    }
+    
+}
+
+@media (min-width: 991px) {
+    
+    .flex-md 
+    {
+        display: flex;
+    }
+    
+    .info-slide .caption
+    {
+        padding: 35px 20px 0 0;
+        background-color: transparent;
+        color: inherit;
+    }
+    
+    #blog
+    {
+        grid-template-columns: 1fr 1fr 1.5fr;
+    }
+    
+    #blog .info-slide > div
+    {
+        width: 50%;
+    }
+    
+    #blog .info-slide h3 
+    {
+        margin-right: -31%;
+        position: relative;
+        margin-top: -4%;
+    }
+    
+    #blog .info-slide .caption:before 
+    {
+        content: url('../images/icon-title-line2.svg');
+        display: block;
+        position: absolute;
+        bottom: -14px;
+        right: -1px;
+        z-index: -1;
+    }
+    
+    .active-slider-of .big
+    {
+        color: var(--dark);
+    }
+    
+    .posts-list
+    {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .pagination 
+    {
+        width: 45%;
+    }
+    
+    .pagination:before 
+    {
+        content: '';
+        display: block;
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+        right: 100%;
+        bottom: 0;
+        left: -50vw;
+    }
+    
+    #social-media .icons 
+    {
+        margin: 0;
+    }
+    
+    .newsletter .row 
+    {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    
+    .newsletter .btn
+    {
+        justify-content: flex-start;
+    }
 }
 
 /* Only Mobile */
@@ -1095,6 +1192,11 @@ button {background: none; border: none; border-radius: 0; outline: none}
     .hidden-xs 
     {
         display: none;
+    }
+    
+    .container-xs
+    {
+        padding: 0 22px;
     }
     
     #top nav 
@@ -1203,12 +1305,66 @@ button {background: none; border: none; border-radius: 0; outline: none}
         opacity: .3;   
     }
     
-    .info-slide .caption 
+    .pagination-slider,
+    .posts-list .category
     {
-        background-color: rgb(18 18 18 / 58%);
-        color: #bbb;
-        padding: 20% 8% 13%;
+        order: -1;    
     }
+    
+    #blog-list:before
+    {
+        content: '';
+        display: block;
+        position: absolute;
+        inset: -45px 10% auto 0;
+        height: 70px;
+        background-image: url('../images/icon-title-line2.svg');
+        background-size: contain;
+        z-index: -1;
+        background-position: right top;
+        background-repeat: no-repeat;
+    }
+    
+    #blog-list .title
+    {
+        margin-bottom: 25px;
+    }
+    
+    .posts-list .image,
+    .footer .nav 
+    {
+        order: -2;
+    }
+    
+    .pagination
+    {
+        margin-bottom: 40px;
+    }
+    
+    .footer .container 
+    {
+        flex-direction: column;
+        padding-bottom: 12px;
+    }
+
+}
+
+/* Only Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+    .hidden-sm
+    {
+        display: none;
+    }
+}
+
+
+
+
+
+
+/* to zmienic */
+@media (max-width: 991px) {
+    
     
     .active-slide
     {
@@ -1242,5 +1398,4 @@ button {background: none; border: none; border-radius: 0; outline: none}
     {
         order: 2;
     }
-
 }
