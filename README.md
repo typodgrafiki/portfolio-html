@@ -14,10 +14,10 @@ Projekt jest jedną ze stron portfolio. Zrealizowany wykorzystując podstawę cz
 - [Normalize]
 
 #### Spis treści
-- O mnie
-- CV
-- Sprawdź mnie
-- Kontakt
+- [Homepage]
+- [Blog_list]
+- [About_me]
+- [Newsletter]
 
 #### Źródła
 - [dribble]
@@ -25,3 +25,7 @@ Projekt jest jedną ze stron portfolio. Zrealizowany wykorzystując podstawę cz
 [Grzegorz_Kocik]: <https://github.com/typodgrafiki>
 [dribble]: <https://dribbble.com/shots/18358364-Blog-Page-Light>
 [Normalize]: <https://github.com/necolas/normalize.css/>
+[Homepage]: <http://html.typodgrafiki.pl/>
+[Blog_list]: <http://html.typodgrafiki.pl/blog.html>
+[About_me]: <http://html.typodgrafiki.pl/about-me.html>
+[Newsletter]: <http://html.typodgrafiki.pl/newsletter.html?newsletter-input=test%40example.com>
