@@ -705,6 +705,20 @@ label
     margin-top: 3px;    
 }
 
+#blog .info-slide > .content 
+{
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+}
+
+#blog .info-slide > .content.active
+{
+    opacity: 1;    
+    visibility: visible;
+    display: flex;
+}
+
 #blog .active-slide 
 {
     flex-direction: column;
@@ -1165,6 +1179,11 @@ label
     #blog .info-slide > div
     {
         width: 50%;
+    }
+    
+    #blog .info-slide > .content 
+    {
+        align-items: stretch;
     }
     
     #blog .info-slide h3 

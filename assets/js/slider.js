@@ -5,7 +5,8 @@ const slider = {
     'el': {
       'active': document.querySelector('.active-slider-of .big'),
       'last': document.querySelector('.active-slider-of .last'),
-      'pagination': document.querySelector('.pagination-slider')
+      'pagination': document.querySelectorAll('.pagination-slider'),
+      'caption': document.querySelector('#blog .info-slide'),
     },
     'active': 1
 }
@@ -18,10 +19,17 @@ for (let index = 0; index < slides.length; index++) {
     
     const bullet = document.createElement('span');
     bullet.classList.add('bullet');
+    
+    const bullet2 = document.createElement('span');
+    bullet2.classList.add('bullet');
+    
     if(index == 0) {
+        bullet2.classList.add('active');
         bullet.classList.add('active');
     }
-    slider.el.pagination.appendChild(bullet);
+    
+    slider.el.pagination[0].appendChild(bullet);
+    slider.el.pagination[1].appendChild(bullet2);
 }
 
 let loop = 0 + 1000*slideSayisi;
@@ -70,18 +78,39 @@ function changeSlide(el) {
         }
     }
     
-    slider.el.pagination.querySelectorAll('.bullet').forEach(element => {
-        element.classList.remove('active')
+    slider.el.pagination.forEach(element => {
+        element.querySelectorAll('.bullet').forEach(element => {
+            element.classList.remove('active')
+        });
+    })
+    
+    slider.el.caption.querySelectorAll('.content').forEach(element => {
+        element.classList.remove('active');
     });
     
-    const activeElement = slider.el.pagination.querySelectorAll('.bullet')[slider.active-1];
-    activeElement.classList.add('active');
+    slider.el.pagination.forEach(element => {
+        const activeElement = element.querySelectorAll('.bullet')[slider.active-1];
+        activeElement.classList.add('active');
+    })
+    
+    const activeElementCaption = slider.el.caption.querySelectorAll('.content')[slider.active-1];
+    
+    activeElementCaption.classList.add('active');
     
     slider.el.active.innerHTML = slider.active;    
 }
 
-next.addEventListener('click',goNext);
-prev.addEventListener('click',goPrev);
+const nextBtn = document.querySelectorAll('#blog .arrow-right');
+const prevBtn = document.querySelectorAll('#blog .arrow-left');
+
+nextBtn.forEach(element => {
+    element.addEventListener('click',goNext);    
+});
+
+prevBtn.forEach(element => {
+    element.addEventListener('click',goPrev);    
+});
+
 document.addEventListener('keydown',function(e){
     if(e.code === 'ArrowRight'){
         goNext();
