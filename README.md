@@ -1,25 +1,25 @@
-# Portfolio &#8226; Projekt HTML/CSS
+# Portfolio &#8226; HTML/CSS Project
 
-## Autor
+## Author
 - [Grzegorz_Kocik]
 
-### Wprowadzenie
-Projekt jest jedną ze stron portfolio. Zrealizowany wykorzystując podstawę czyli technologie HTML i CSS. Projekt nie korzysta z zewnętrznych biblotek oprócz resetu styli [Normalize]. Wydłuża to proces tworzenia ale ukazuje w całości kod napisany przeze mnie. Design zaczerpnięty ze strony [dribble]
+### Introduction
+The project is one of the portfolio pages. It was created using the basics, that is HTML and CSS technologies. The project does not use external libraries except for the style reset [Normalize]. This lengthens the creation process but shows the code written entirely by me. The design was inspired by [dribble] website.
 
-### Technologie
+### Technologies
 - HTML
 - CSS
 
-### Użyte biblioteki
+### Used Libraries
 - [Normalize]
 
-#### Spis treści
+#### Table of Contents
 - [Homepage]
 - [Blog_list]
 - [About_me]
 - [Newsletter]
 
-#### Źródła
+#### Sources
 - [dribble]
 
 [Grzegorz_Kocik]: <https://github.com/typodgrafiki>
