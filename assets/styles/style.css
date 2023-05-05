@@ -292,6 +292,30 @@ textarea.form-control
     align-items: center;
 }
 
+.date-row > div
+{
+    position: relative;
+    top: 20px;
+    opacity: 0;
+    transition: all .2s ease;
+}
+
+.date-row > .length
+{
+    transition-delay: .05s;    
+}
+
+.date-row > .date
+{
+    transition-delay: .1s;
+}
+
+.item:hover .date-row > div
+{
+    top: 0;
+    opacity: 1;    
+}
+
 .category:before
 {
     content: '';
